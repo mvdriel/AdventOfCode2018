@@ -1,7 +1,6 @@
 #!/usr/bin/env php
 <?php
-
-$data = file_get_contents('day01.txt');
+$data = file_get_contents('input');
 
 $data = trim($data);
 $data = explode("\n", $data);
