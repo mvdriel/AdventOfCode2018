@@ -1,14 +1,12 @@
 #!/usr/bin/env php
 <?php
+require 'lib.php';
+
 $data = file_get_contents('input');
 
 $data = trim($data);
 $data = explode("\n", $data);
 
-$i = 0;
+printf('a: %s', lib::a($data) . "\n");
 
-foreach ($data as $item) {
-	$i += $item;
-}
-
-var_dump($i);
+printf('b: %s', lib::b($data) . "\n");
